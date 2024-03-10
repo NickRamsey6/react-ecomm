@@ -1,17 +1,17 @@
 
 const productsArray = [
     {
-        id: '1',
+        id: 'price_1OsYePHePvVIOMpVcmCrhOk4',
         name: 'Coffee',
         price: 4.99
     },
     {
-        id: '2',
+        id: 'price_1OsYf9HePvVIOMpVyK9f0Mb4',
         name: 'Sunglasses',
         price: 9.99
     },
     {
-        id: '3',
+        id: 'price_1OsYfvHePvVIOMpVUxYUtuaN',
         name: 'Camera',
         price: 39.99
     },

@@ -2,6 +2,7 @@ import { Button, Container, Navbar, Modal } from 'react-bootstrap';
 import { useState, useContext } from 'react';
 import { CartContext } from '../CartContext';
 import CartProduct from './CartProduct';
+import Nav from 'react-bootstrap/Nav';
 
 function NavbarComponent() {
     const cart = useContext(CartContext);
@@ -31,6 +32,11 @@ function NavbarComponent() {
         <>
             <Navbar expand='sm'>
                 <Navbar.Brand href='/'>Ecommerce Store</Navbar.Brand>
+                <Nav.Link href='/'>Home</Nav.Link>
+                <Nav.Link href='/'>About Us</Nav.Link>
+                <Nav.Link href='/'>Locations</Nav.Link>
+                <Nav.Link href='/'>Contact Us</Nav.Link>
+                <Nav.Link href='/store'>Order Now</Nav.Link>
                 <Navbar.Toggle />
                 <Navbar.Collapse className='justify-content-end'>
                     <Button onClick={handleShow}>Cart ({productsCount}) items</Button>

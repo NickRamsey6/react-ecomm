@@ -17,8 +17,8 @@ function App() {
         <NavbarComponent />
         <BrowserRouter>
           <Routes>
-            <Route index element={<Home />} />
-            <Route index element={<Store />} />
+            <Route  exact path='/'index element={<Home />} />
+            <Route exact path='/store' element={<Store />} />
             <Route path='success' element={<Success />} />
             <Route path='cancel' element={<Cancel />} />
           </Routes>

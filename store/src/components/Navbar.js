@@ -30,7 +30,7 @@ function NavbarComponent() {
 
     return (
         <>
-            <Navbar expand='sm' className='justify-content-center'>
+            <Navbar expand='sm' className='justify-content-center' sticky='top'>
                 <Navbar.Brand href='/'>Ecommerce Store</Navbar.Brand>
                 <Nav.Link href='/'>Home</Nav.Link>
                 <Nav.Link href='/'>About Us</Nav.Link>

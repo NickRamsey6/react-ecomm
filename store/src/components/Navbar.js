@@ -31,13 +31,15 @@ function NavbarComponent() {
     return (
         <>
             <Navbar expand='sm' className='justify-content-center' sticky='top'>
-                <Navbar.Brand href='/'>Ecommerce Store</Navbar.Brand>
-                <Nav.Link href='/'>Home</Nav.Link>
-                <Nav.Link href='/'>About Us</Nav.Link>
-                <Nav.Link href='/'>Locations</Nav.Link>
-                <Nav.Link href='/'>Contact Us</Nav.Link>
-                <Nav.Link href='/store'>Order Now</Nav.Link>
-                <Navbar.Toggle />
+                <Nav className="mr-auto">
+                    <Navbar.Brand href='/'>Ecommerce Store</Navbar.Brand>
+                    <Nav.Link href='/'>Home</Nav.Link>
+                    <Nav.Link href='/'>About Us</Nav.Link>
+                    <Nav.Link href='/'>Locations</Nav.Link>
+                    <Nav.Link href='/'>Contact Us</Nav.Link>
+                    <Nav.Link href='/store'>Order Now</Nav.Link>
+                    <Navbar.Toggle />
+                </Nav>
                 <Navbar.Collapse className='justify-content-end'>
                     <Button onClick={handleShow}>Cart ({productsCount}) items</Button>
                 </Navbar.Collapse>

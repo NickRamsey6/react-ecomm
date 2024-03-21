@@ -1,4 +1,4 @@
-import { Button, Container, Navbar, Modal } from 'react-bootstrap';
+import { Button, Container, Navbar, Modal, NavItem } from 'react-bootstrap';
 import { useState, useContext } from 'react';
 import { CartContext } from '../CartContext';
 import CartProduct from './CartProduct';
@@ -30,15 +30,29 @@ function NavbarComponent() {
 
     return (
         <>
-            <Navbar expand='sm' className='justify-content-center' sticky='top'>
-                <Nav className="mr-auto">
-                    <Navbar.Brand href='/'>Ecommerce Store</Navbar.Brand>
-                    <Nav.Link href='/'>Home</Nav.Link>
-                    <Nav.Link href='/'>About Us</Nav.Link>
-                    <Nav.Link href='/'>Locations</Nav.Link>
-                    <Nav.Link href='/'>Contact Us</Nav.Link>
-                    <Nav.Link href='/store'>Order Now</Nav.Link>
-                    <Navbar.Toggle />
+            <Navbar expand='sm'   sticky='top'>
+                <Nav className="justify-content-center">
+                    <NavItem>
+                        <Navbar.Brand href='/'>Tuscan Stone Pizza</Navbar.Brand>
+                    </NavItem>
+                    <NavItem>
+                        <Nav.Link href='/'>Home</Nav.Link>
+                    </NavItem>
+                    <NavItem>
+                        <Nav.Link href='/'>About Us</Nav.Link>
+                    </NavItem>
+                    <NavItem>
+                        <Nav.Link href='/'>Locations</Nav.Link>
+                    </NavItem>
+                    <NavItem>
+                        <Nav.Link href='/'>Contact Us</Nav.Link>
+                    </NavItem>
+                    <NavItem>
+                        <Nav.Link href='/store'>Order Now</Nav.Link>
+                    </NavItem>
+                    <NavItem>
+                        <Navbar.Toggle />
+                    </NavItem>
                 </Nav>
                 <Navbar.Collapse className='justify-content-end'>
                     <Button onClick={handleShow}>Cart ({productsCount}) items</Button>
